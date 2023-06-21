@@ -31,6 +31,7 @@ function listar(){
                     <td>${vehicle.car_model_year}</td>
                     <td>${vehicle.price}</td>
                     <td>${availability }</td>
+                    <td>${vehicle.user.firstName + " "+vehicle.user.lastName}</td>
                     <td>
                     <a href="#" onclick="verModificarUsuario('${vehicle.id}')" class="btn btn-outline-warning">
                         <i class="fa-solid fa-user-pen"></i>
@@ -129,6 +130,7 @@ function verUsuario(id){
                     <li class="list-group-item">Año modelo: ${vehicle.car_model_year}</li>
                     <li class="list-group-item">Precio: ${vehicle.price}</li>
                     <li class="list-group-item">Disponibilidad: ${availability}</li>
+                    <li class="list-group-item">Nombre del dueño: ${vehicle.user.firstName + " "+vehicle.user.lastName}</li>
                 </ul>`;
               
             }
